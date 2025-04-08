@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Taller Integrador de JavaScript</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    form {
+      margin-bottom: 40px;
+    }
+    fieldset {
+      margin-bottom: 20px;
+      padding: 10px;
+    }
+    legend {
+      font-weight: bold;
+    }
+    label {
+      display: block;
+      margin: 5px 0;
+    }
+    input {
+      padding: 5px;
+      margin-bottom: 10px;
+    }
+    button {
+      padding: 7px 15px;
+    }
+  </style>
+</head>
+<body>
+  <h1>S03.s2 - Taller Integrador de JavaScript</h1>
+  <p>
+    Este taller integra conceptos básicos de JavaScript tales como variables, constantes, estructuras de control y manejo de cadenas, 
+    junto con operadores y funciones matemáticas. Los ejercicios están diseñados en contextos cotidianos
+  </p>
+  
+  <!-- Ejercicio 1: Registro de Hotel -->
+  <fieldset>
+    <legend>Ejercicio 1: Registro de Hotel</legend>
+    <p>
+      Introducción a variables, constantes y condicionales. Ingrese la cantidad de noches y el precio por noche para calcular el total. 
+      Se aplicará un descuento del 10% si se reservan 5 noches o más.
+    </p>
+    <form id="hotelForm">
+      <label for="nights">Número de noches:</label>
+      <input type="number" id="nights" name="nights" required>
+      
+      <label for="price">Precio por noche (S/):</label>
+      <input type="number" id="price" name="price" step="0.01" required>
+      
+      <button type="submit">Calcular Total</button>
+    </form>
+    <div id="hotelResult"></div>
+  </fieldset>
+
+  <!-- Ejercicio 2: Login Simple -->
+  <fieldset>
+    <legend>Ejercicio 2: Login Simple</legend>
+    <p>
+      Aplicación de estructuras de control y manejo de excepciones. Ingrese su usuario y contraseña para simular un login básico.
+    </p>
+    <form id="loginForm">
+      <label for="username">Usuario:</label>
+      <input type="text" id="username" name="username" required>
+      
+      <label for="password">Contraseña:</label>
+      <input type="password" id="password" name="password" required>
+      
+      <button type="submit">Iniciar Sesión</button>
+    </form>
+    <div id="loginResult"></div>
+  </fieldset>
+
+  <!-- Ejercicio 3: Calculadora de Multiplicación -->
+  <fieldset>
+    <legend>Ejercicio 3: Calculadora de Multiplicación</legend>
+    <p>
+      Uso de operadores aritméticos y función Math. Ingrese dos números para multiplicarlos y redondear el resultado.
+    </p>
+    <form id="multiplyForm">
+      <label for="num1">Número 1:</label>
+      <input type="number" id="num1" name="num1" step="any" required>
+      
+      <label for="num2">Número 2:</label>
+      <input type="number" id="num2" name="num2" step="any" required>
+      
+      <button type="submit">Multiplicar</button>
+    </form>
+    <div id="multiplyResult"></div>
+  </fieldset>
+
+  <!-- Ejercicio 4: Manejo de Cadenas -->
+  <fieldset>
+    <legend>Ejercicio 4: Manejo de Cadenas</legend>
+    <p>
+      Se aplican métodos de cadena: concatenación, obtención de longitud, extracción de subcadena y búsqueda de caracteres.
+      Ingrese su nombre completo para generar un mensaje de bienvenida personalizado.
+    </p>
+    <form id="stringForm">
+      <label for="fullName">Nombre Completo:</label>
+      <input type="text" id="fullName" name="fullName" required>
+      
+      <button type="submit">Procesar Nombre</button>
+    </form>
+    <div id="stringResult"></div>
+  </fieldset>
+
+  <!-- Se enlaza el archivo JavaScript donde se aplica la lógica de los ejercicios -->
+  <script src="app.js"></script>
+</body>
+</html>
